@@ -1,0 +1,88 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }  
+         
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>snippets.sikuli\snippets.sikuli</h2> <a href="snippets.sikuli\snippets.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">try</span>:
+    region.<span class="skw">click</span>(<span class="str">'task_03.png'</span>)
+<span class="kw">except</span> FindFailed:
+    <span class="kw">continue</span>
+region_npc_chars = Region(region.x + <span class="dig">251</span>, region.y + <span class="dig">202</span>, <span class="dig">494</span>, <span class="dig">187</span>)
+loc = region_npc_chars.<span class="skw">wait</span>(<span class="str">'task_03.png'</span>, <span class="dig">30</span>)
+<span class="skw">click</span>(Location(loc1.x - <span class="dig">30</span>, loc1.y + <span class="dig">40</span>))
+
+region_npc_chat = Region(<span class="dig">245</span> + region.x, <span class="dig">337</span> + region.y, <span class="dig">510</span>, <span class="dig">140</span>)
+loc1 = region_npc_chat.<span class="skw">wait</span>(<span class="str">'task_03_small.png'</span>, <span class="dig">30</span>)
+<span class="skw">click</span>(Location(loc1.x + <span class="dig">30</span>, loc1.y))
+region.onAppear(<span class="str">'menu__bounty_quest__accept.png'</span>, questAcceptBounty)
+region.onAppear(<span class="str">'quest_accept.png'</span>, questAccept)
+</pre>
+</body>
+</html>

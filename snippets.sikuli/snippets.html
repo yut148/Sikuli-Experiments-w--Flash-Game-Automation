@@ -1,0 +1,140 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }  
+         
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>snippets.sikuli</h2> <a href="snippets.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<img src="the_burning_barrens__exit.png" />
+<img src="the_burning_barrens__statue_of_gorena.png" />
+<img src="world_map__regia_deorum.png" /><img src="world_map__brimstone_bosk.png" /><img src="world_map__chthon_wilderness.png" /><img src="world_map__the_wailing_canyon.png" /><img src="world_map__chasm_of_despair.png" /><img src="world_map__land_of_bones.png" /><img src="world_map__forest_of_the_fallen.png" /><img src="world_map__soulmoor.png" /><img src="world_map__the_badlands.png" /><img src="world_map__crystalline_crypt.png" /><img src="world_map__anor_plain.png" /><img src="world_map__necrolis.png" />
+<img src="regia_deorum__SquareofOrde__quest_new.png" /><img src="regia_deorum__Palaceasrmu__quest_new.png" /><img src="regia_deorum__exit.png" /><img src="regia_deorum__hall_of_fearless.png" />
+
+
+<img src="menu_server_select.png" />
+
+
+<img src="alliance_castle_2__treasure_chest.png" />
+<img src="alliance_chest_Drawthewelfa.png" />
+<img src="alliance_chest_battle_awards.png" />
+<img src="alliance_chest_close.png" />
+
+<img src="menu_assign.png" />
+
+<img src="menu_train_Youarecurren_text.png" /><img src="menu_train_Youarecurren_confirm.png" />
+
+<span class="cmt">#Land of Bones
+</span><img src="land_of_bones__wyvern_bones.png" />
+
+<span class="cmt">#Alliance - Enter
+</span><img src="menu_alliance.png" /><img src="alliance__enter_alliance.png" />
+<img src="alliance__exit.png" />
+
+<span class="cmt">#Alliance - Daily Quests
+</span><img src="alliance__receiver_text.png" /><img src="alliance__alliance_quests.png" /><img src="alliance__quest_finish.png" /><img src="alliance__quest_close.png" />
+<img src="alliance__quest_accept.png" />Region(<span class="dig">944</span>,<span class="dig">537</span>,<span class="dig">351</span>,<span class="dig">55</span>)<span class="cmt"># Quest Description Text</span>
+
+<span class="cmt">#City
+</span><span class="skw">click</span>(Pattern(<img src="city_exit_2.png" />).targetOffset(<span class="dig">10</span>,<span class="dig">27</span>))
+Pattern(<img src="city_exit_2.png" />).targetOffset(<span class="dig">15</span>,<span class="dig">25</span>)
+<img src="regia_deorum__BountyQuests_menu_2.png" />
+
+
+<span class="cmt">#Burning Barrens
+</span><img src="burning_barrens__statue_of_gorena.png" /><img src="burning_barrens__dark_rift.png" />
+
+<span class="cmt">#Chthon Wilderness
+</span>Pattern(<img src="chthon_wilderness__dauntless_grove.png" />).similar(<span class="dig">0.60</span>)<img src="chthon_wilderness__pit_of_immolation.png" /><img src="chthon_wilderness__invernal_arena.png" />
+
+
+<span class="cmt">#WailingCanyon
+</span><img src="wailing_canyon__icewind_trail.png" />
+
+<span class="cmt">#Under Attack
+</span><img src="menu_Your_castle_under_attack.png" /><img src="menu_yes.png" /><img src="menu_no.png" />
+
+<span class="cmt">#Chasm of Despair
+</span><img src="chasm_despair__roiling_river.png" />
+
+<span class="cmt">#Anon Plain
+</span><img src="anor_plain__stonehenge.png" />
+
+<span class="cmt">#Dungeon
+</span><img src="dungeon_tile_char.png" /><img src="dungeon_tile_fight.png" /><img src="dungeon_tile_warpgate.png" /><img src="dungeon_tile_resources.png" /><img src="dungeon_tile_chest.png" /><img src="dungeon_tile_boss.png" /><img src="dungeon_tile_unknown.png" />
+<img src="dungeon_menu_attack.png" /><img src="dungeon_menu_assign.png" /><img src="dungeon_menu_recruit.png" /><img src="dungeon_menu_inventory.png" />
+
+<span class="cmt">#Infernus
+</span><img src="infernus_chaos_alter.png" />
+<img src="phantom_dez.png" />
+
+
+<span class="cmt">#Training
+</span><img src="train_coliseum__inferno.png" />
+</pre>
+</body>
+</html>

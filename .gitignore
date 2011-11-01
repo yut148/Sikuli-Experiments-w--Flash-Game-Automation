@@ -1,0 +1,5 @@
+*.class
+autoit
+local_*
+.idea
+.dropbox
