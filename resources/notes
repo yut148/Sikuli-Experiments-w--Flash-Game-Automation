@@ -1,0 +1,70 @@
+fucking-off.call-of-gods
+
+• setup regions for all action areas
+• review class based implementations
+• setup dynamic region w/ function to update
+• review threaded use of observers
+∘ timer - resource collection
+• setup pause check for threaded timers
+∘ while GLOBAL_SETTING.PAUSE = True:
+∘     time.sleep(2)
+• update fights to use observer
+∘ think class based
+• setup fights to test for loses 
+∘ onAppear('lose')
+‣ target = next in list
+• setup list of areas - order by difficulty w/ region dict
+• setup classes of imgs based on "town label"
+• debug quest runnner
+∘ detection of current tab
+∘ update to identify special quest types
+‣ collect
+• check db for lvl range vs area
+‣ alliance turn in
+• allianceFinishQuest()
+‣ OTHER?
+∘ create Region for available quests
+‣ update link clicker
+• setup daily/cron?
+∘ alliance
+‣ chest
+‣ quests
+∘ bounty
+∘ daily quests from regia
+• dungeon runner
+∘ check region in 4 directions
+‣ fight / treasure / resource
+• clickers
+‣ boss
+• max troops
+• fight
+∘ LVL_BOSS = True
+‣ warp
+• if LVL_BOSS = True:
+•     click
+•     LVL_BOSS = False
+•     tiles = 1
+‣ blank
+• test for outlines
+∘ read # total tiles from region
+• think through multi team runner
+∘ check class of BOSS
+∘ join
+‣ click rdy
+∘ lead
+‣ 11 + 13 != blank
+‣ total = #!blank
+‣ if #ready == total:
+• click(fight__multi__start)
+• r&d sikuli interface w/ tesseract
+• parser
+∘ create var from all imgs in folder by FILENAME
+∘ FILENAME.ext = filename
+• fightClose
+∘ on idle: 0
+‣ pull img from above
+‣ recruit img match
+• while onAppear(not enough X)
+∘ num_troops = read troop count
+∘ type(num_troops - 100)
+
