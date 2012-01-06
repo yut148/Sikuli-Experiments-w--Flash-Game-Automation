@@ -1,0 +1,9 @@
+This is a collection of experiments I created to automate the Call of Gods Flash Game.
+
+Not sure whether any of them still work as it's been a while since I last opened the game at all.
+
+Was a handy way to introduce myself to working with the Sikuli image recognition engine, having gotten comfortable making it do interesting things figured I'd publish to help anyone else wanting some examples to learn from.
+
+There is some documentation inside the scripts, I had not intended to do much of anything with most of them other than see if something would work.
+
+Feel free to tinker as you like.
